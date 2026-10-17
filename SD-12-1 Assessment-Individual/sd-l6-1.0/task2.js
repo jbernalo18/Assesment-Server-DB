@@ -2,8 +2,10 @@
 
 import { getServerURL } from "./task1.js";
 
-export function listUsers() {
+export async function listUsers() {
     const URL = getServerURL() + "/users" //ruta de usuarios
-    console.log(URL);
-    
+    const response =  await fetch(URL);
+    const data = await response.json();
+    console.log(data);
+      
 }
