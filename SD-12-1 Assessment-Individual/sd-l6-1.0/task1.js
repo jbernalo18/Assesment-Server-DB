@@ -1,0 +1,7 @@
+// Task 1: getServerURL()
+
+export function getServerURL() {
+    const urlServidor = "http://localhost:3000"; 
+    return urlServidor;
+}
+
